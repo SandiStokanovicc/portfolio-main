@@ -510,7 +510,7 @@ header {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid var(--first-color);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -532,7 +532,7 @@ header {
 
 /*Footer*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #0C4160;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);

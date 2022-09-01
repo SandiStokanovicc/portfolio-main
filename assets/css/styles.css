@@ -12,7 +12,7 @@
 
 /*Colors*/
 :root {
-  --first-color: #000C66;
+  --first-color: #2f3fbb;
   --second-color: #14191b;
 }
 
@@ -146,8 +146,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: transparent;
 }
 
 /*Intro animation*/
@@ -233,7 +232,7 @@ body.dark .nav_logo img {
     brightness(106%) contrast(148%);
 }
 body.dark .l-header {
-  background-color: #1f1f1f;
+  background-color: transparent;
 }
 body.dark .home_social-icon {
   color: white;
@@ -535,7 +534,7 @@ header {
 
 /*Footer*/
 .footer {
-  background-color: #0C4160;
+  background-color: var(--first-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);

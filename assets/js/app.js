@@ -116,8 +116,11 @@ function checkDarkmode(){
     particlesJS.load('particles-js', 'particles.json')
   }
   else {
-    particlesJS.load('particles-js', 'particleslight.json')
+    particlesJS.load('particles-js', 'particles.json')
   }
 }
 
 particlesJS.load('particles-js', 'particles.json')
+
+
+window.addEventListener("scroll", changeCss , false);

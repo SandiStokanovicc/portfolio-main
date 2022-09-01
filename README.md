@@ -10,4 +10,4 @@ The page was created using:
   - Boxicons - https://boxicons.com/
   - Scroll reveal - https://scrollrevealjs.org/
 
-I am currently working on site deployment.
+You can see the site [here](https://www.sandistokanovic.com)

@@ -104,6 +104,24 @@ const toggleDarkMode = document.getElementById("toggle");
 toggleDarkMode.addEventListener("change", () => {
   document.body.classList.toggle("dark");
   document.getElementById("head").classList.toggle("dark");
+  checkDarkmode();
 });
 document.body.classList.toggle("dark");
-document.getElementById("head").classList.toggle("dark");
+  document.getElementById("head").classList.toggle("dark");
+
+function checkDarkmode(){
+  if (document.body.classList.contains("dark")){
+    particlesJS.load('particles-js', 'particles.json', function(){
+      console.log('json loaded');
+    })
+  }
+  else {
+    particlesJS.load('particles-js', 'particleslight.json', function(){
+      console.log('json loaded');
+    })
+  }
+}
+
+particlesJS.load('particles-js', 'particles.json', function(){
+  console.log('json loaded');
+})

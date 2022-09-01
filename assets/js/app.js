@@ -110,18 +110,14 @@ document.body.classList.toggle("dark");
   document.getElementById("head").classList.toggle("dark");
 
 function checkDarkmode(){
+  window.pJSDom[0].pJS.fn.vendors.destroypJS();
+  window["pJSDom"] = [];
   if (document.body.classList.contains("dark")){
-    particlesJS.load('particles-js', 'particles.json', function(){
-      console.log('json loaded');
-    })
+    particlesJS.load('particles-js', 'particles.json')
   }
   else {
-    particlesJS.load('particles-js', 'particleslight.json', function(){
-      console.log('json loaded');
-    })
+    particlesJS.load('particles-js', 'particleslight.json')
   }
 }
 
-particlesJS.load('particles-js', 'particles.json', function(){
-  console.log('json loaded');
-})
+particlesJS.load('particles-js', 'particles.json')

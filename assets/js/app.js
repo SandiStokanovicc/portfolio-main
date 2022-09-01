@@ -122,5 +122,3 @@ function checkDarkmode(){
 
 particlesJS.load('particles-js', 'particles.json')
 
-
-window.addEventListener("scroll", changeCss , false);

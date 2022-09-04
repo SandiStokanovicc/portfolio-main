@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 :root {
   scrollbar-color: rgb(0, 12, 102) rgb(20, 25, 27) !important;
   scrollbar-width: auto !important;
@@ -66,6 +67,7 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
+
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -124,6 +126,7 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -207,6 +210,7 @@ img {
   color: white;
   font-size: 2.5rem;
 }
+
 #toggle {
   visibility: hidden;
 }
@@ -214,32 +218,40 @@ img {
 body {
   transition: background 0.3s linear, color 0.3s linear;
 }
+
 body.dark {
   background-color: #0c0c0c;
   color: white;
 }
+
 body.dark .lab .bx {
   color: #1f1f1f;
 }
+
 body.dark .lab {
   background-color: #fff;
 }
+
 body.dark .nav_link {
   color: white;
 }
+
 body.dark .nav_logo img {
-  filter: invert(87%) sepia(55%) saturate(6910%) hue-rotate(180deg)
-    brightness(106%) contrast(148%);
+  filter: invert(87%) sepia(55%) saturate(6910%) hue-rotate(180deg) brightness(106%) contrast(148%);
 }
+
 body.dark .l-header {
   background-color: transparent;
 }
+
 body.dark .home_social-icon {
   color: white;
 }
+
 body.dark .bx {
   color: white;
 }
+
 body.dark .home_social-icon .bx:hover {
   color: var(--first-color);
 }
@@ -257,6 +269,7 @@ body.dark .home_social-icon .bx:hover {
 header {
   transition: background 0.3s linear, color 0.3s linear;
 }
+
 .nav {
   height: 3rem;
   display: flex;
@@ -288,6 +301,7 @@ header {
     width: 35px;
     height: 35px;
   }
+
   .lab .bx {
     color: white;
     font-size: 2.2rem;
@@ -302,9 +316,11 @@ header {
   position: relative;
   color: #fff;
 }
+
 .nav_link:hover {
   position: relative;
 }
+
 .nav_link:hover::after {
   position: absolute;
   content: "";
@@ -314,10 +330,12 @@ header {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 .nav_logo img {
   width: 45px;
   height: 50px;
 }
+
 .nav_toggle {
   color: var(--second-color);
   font-size: 1.5rem;
@@ -366,6 +384,10 @@ header {
 .home_social {
   display: flex;
   flex-direction: column;
+}
+
+.home_social_mobile {
+  display: none;
 }
 
 .home_social-icon {
@@ -565,6 +587,42 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .home_img {
+    width: 100px;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  #ja {
+    margin-top: 150px;
+  }
+
+  .home_social {
+    display: inline;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #linkedin {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home_img {
+    width: 100px;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-height: 600px) {
   .home_img {
     bottom: 10px;
@@ -591,6 +649,7 @@ header {
   .section-title {
     margin-bottom: var(--mb-6);
   }
+
   .section-title::after {
     width: 80px;
     top: 3rem;
@@ -599,17 +658,21 @@ header {
   .nav {
     height: calc(3rem + 1rem);
   }
+
   .nav_list {
     display: flex;
     padding-top: 0;
   }
+
   .nav_item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
+
   .nav_toggle {
     display: none;
   }
+
   .nav_link {
     color: var(--second-color);
   }
@@ -617,19 +680,23 @@ header {
   .home {
     height: 100vh;
   }
+
   .home_data {
     align-self: flex-end;
   }
+
   .home_social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
+
   .home_social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
+
   .home_img {
     width: 475px;
     bottom: 12%;
@@ -645,14 +712,17 @@ header {
   .about_img img {
     width: 300px;
   }
+
   .work_container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     column-gap: 2rem;
   }
+
   .contact_form {
     width: 360px;
   }
+
   .contact_container {
     justify-items: center;
   }
@@ -663,10 +733,12 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+
   .home_img {
     right: 15%;
     bottom: 25%;
   }
+
   .toggle-container {
     position: fixed;
     right: 10px;
